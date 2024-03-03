@@ -1973,7 +1973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1094469011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4738,6 +4738,10 @@ PrefabInstance:
       propertyPath: mouseTarget
       value: 
       objectReference: {fileID: 1601360972}
+    - target: {fileID: 1362449035758384877, guid: 579ca622f68bd1349b4b4f88ab2ef1b3, type: 3}
+      propertyPath: slowDownRate
+      value: 5.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2444229670359179326, guid: 579ca622f68bd1349b4b4f88ab2ef1b3, type: 3}
       propertyPath: m_Name
       value: Ball

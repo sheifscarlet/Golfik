@@ -1827,11 +1827,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224796411}
   m_CullTransparentMesh: 1
---- !u!4 &294902751 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7811144605764792090, guid: 6c0538947fa263c45b1bb4a9b5402230, type: 3}
-  m_PrefabInstance: {fileID: 1204743384}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &450026966 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6562573766188542704, guid: f80ad698007d5554cbed2011ebb34a6b, type: 3}
@@ -2146,7 +2141,7 @@ PrefabInstance:
     - target: {fileID: 4129168120015012756, guid: 6c0538947fa263c45b1bb4a9b5402230, type: 3}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 294902751}
+      objectReference: {fileID: 0}
     - target: {fileID: 7811144605764792090, guid: 6c0538947fa263c45b1bb4a9b5402230, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
@@ -2617,11 +2612,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!4 &1007505836 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7811144605764792090, guid: 6c0538947fa263c45b1bb4a9b5402230, type: 3}
-  m_PrefabInstance: {fileID: 2064542485}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1044913878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2729,7 +2719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1094469011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3114,7 +3104,7 @@ PrefabInstance:
     - target: {fileID: 4129168120015012756, guid: 6c0538947fa263c45b1bb4a9b5402230, type: 3}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 1007505836}
+      objectReference: {fileID: 0}
     - target: {fileID: 7811144605764792090, guid: 6c0538947fa263c45b1bb4a9b5402230, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.49
@@ -3516,7 +3506,6 @@ MonoBehaviour:
   maxImpactForce: 50
   timeToGetMaxImpact: 1.5
   canHit: 1
-  slowDownRate: 0.99
   mouseTarget: {fileID: 1601360972}
 --- !u!114 &1503430511
 MonoBehaviour:

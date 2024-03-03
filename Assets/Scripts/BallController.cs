@@ -14,8 +14,8 @@ public class BallController : MonoBehaviour
     private bool isMoving = false;
     private bool isIncreasing = false;
     private float increaseRate; // The rate of increase of  currentImpactForce 
-    //коэф замедления, где 1 означает отсутствие замедления, а 0 — мгновенную остановку
-    [SerializeField] private float slowDownRate;
+    
+    private float slowDownRate = 5.5f;
     
     //Mouse target
     [SerializeField] private GameObject mouseTarget;
@@ -72,7 +72,7 @@ public class BallController : MonoBehaviour
         if (isMoving)
         {
             canHit = false;
-            rb.velocity *= slowDownRate;
+            rb.velocity *= 1 - Mathf.Clamp01(slowDownRate * Time.deltaTime);
             if (rb.velocity.magnitude < 0.1f)
             {
                 _followMouse.isFollowMouse = true;
@@ -90,6 +90,8 @@ public class BallController : MonoBehaviour
             UIController.instance.SetImpactForceBarValue(currentImpactForce);
         }
     }
+    
+    
 
     public void SetSpeedToZero()
     {
