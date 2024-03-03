@@ -13,7 +13,7 @@ public class BallController : MonoBehaviour
     public bool canHit = true;
     private bool isMoving = false;
     private bool isIncreasing = false;
-    private float increaseRate; // The rate of increase of  currentImpactForce 
+    private float increaseRate; 
     
     private float slowDownRate = 5.5f;
     
@@ -66,7 +66,7 @@ public class BallController : MonoBehaviour
             rb.AddForce(directionVector * currentImpactForce, ForceMode2D.Impulse);
             currentImpactForce = 0;
             newPositionSetAfterHit = false;
-            //_followMouse.isFollowMouse = true;
+            
         }
 
         if (isMoving)
