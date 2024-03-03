@@ -46,29 +46,28 @@ public class TimerController : MonoBehaviour
     {
         if (!_holeHitCheck.IsHitHole)
         {
-            // Уменьшаем секунды на количество секунд, прошедших с последнего кадра
+            
             timer.Seconds -= Time.deltaTime;
 
-            // Если секунд стало меньше 0, уменьшаем минуты и обновляем секунды
+            
             if (timer.Seconds <= 0)
             {
                 if (timer.Minutes > 0)
                 {
                     timer.Minutes--;
-                    timer.Seconds += 59; // Добавляем 60 секунд, так как уменьшили минуту
+                    timer.Seconds += 59;
                 }
                 else
                 {
-                    // Таймер достиг нуля, можно остановить или обработать окончание таймера
-                    timer.Seconds = 0; // Убедитесь, что время не уйдет в отрицательное значение
+                    
+                    timer.Seconds = 0; 
                     Debug.Log("Time's up!");
                     _hitCounter.GameOver();
-                    //SceneManager.LoadScene("Menu");
-                    // Остановить таймер или выполнить другие действия
+                    
                 }
             }
 
-            //Debug.Log("Minutes: " + timer.Minutes + " Seconds: " + Mathf.Floor(timer.Seconds));
+            
         }
         
     }
